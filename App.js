@@ -1,11 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native';
+import Task from "./components/Task.js"
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.tasksWrapper}>
         <Text style={styles.sectionTitle}>Tytuł taska</Text>
-        <View style={styles.items}></View>
+        <View style={styles.items}>
+          <Task></Task>
+          <Task></Task>
+          <Task></Task>
+        </View>
       </View>
     </View>
   );
