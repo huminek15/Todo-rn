@@ -7,9 +7,9 @@ export default function App() {
       <View style={styles.tasksWrapper}>
         <Text style={styles.sectionTitle}>Tytuł taska</Text>
         <View style={styles.items}>
-          <Task></Task>
-          <Task></Task>
-          <Task></Task>
+          <Task text="Task 1"></Task>
+          <Task text="Task 2"></Task>
+          <Task text="Task 3"></Task>
         </View>
       </View>
     </View>
@@ -19,9 +19,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   tasksWrapper: {
     paddingTop: 80,
